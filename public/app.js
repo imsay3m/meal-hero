@@ -15,6 +15,7 @@ const displayData = (data) => {
     document.getElementById("total-meals").innerText = data.length
     // console.log(data)
     const mealsContainer = document.getElementById("meals-container")
+    mealsContainer.innerText = ''
     data.forEach((meal) => {
         const card = document.createElement("div")
         card.innerHTML = `
